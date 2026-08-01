@@ -1,7 +1,25 @@
 aid: rapido
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rapido.png
 name: Rapido
-description: 'Rapido is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: services. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Rapido is an Indian on-demand urban mobility platform that connects riders
+  with independent driver-partners (called "Captains") for bike taxis, auto rickshaws,
+  and cabs through its consumer and Captain mobile apps. Founded in Bengaluru and backed
+  by Accel, Rapido operates across hundreds of Indian cities and has expanded into parcel
+  delivery and corporate mobility. As of this enrichment pass Rapido exposes only a
+  consumer-facing web and app surface — no public developer API, developer portal, SDK,
+  or machine-readable specification was found. This profile captures the company identity,
+  its published policy and content pages, and a domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/rapido/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Services
+- Mobility
+- Transportation
+- Ride Hailing
+- Bike Taxi
+- Logistics
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +48,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.rapido.bike/Home
+- type: Blog
+  url: https://www.rapido.bike/Blog?page=1
+- type: PrivacyPolicy
+  url: https://www.rapido.bike/Privacy
+- type: TermsOfService
+  url: https://www.rapido.bike/CustomerTerms
+- type: Support
+  url: https://www.rapido.bike/Contact
+- type: DomainSecurity
+  url: security/rapido-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
